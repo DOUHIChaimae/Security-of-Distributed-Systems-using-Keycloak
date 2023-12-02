@@ -20,7 +20,7 @@
 **Partie  2** :
 -Sécuriser avec Keycloak les applications Wallet App
 
-### ***Partie 1*** 
+## ***Partie 1*** 
 ***Keycloak*** est un serveur d'authentification et d'autorisation Open Source. Il permet de gérer les utilisateurs, les rôles, les groupes, les sessions, les politiques de sécurité, etc. Il est basé sur le standard OpenID Connect et s'appuie sur le standard OAuth 2.0. Il est compatible avec les standards SAML 2.0 et LDAP.
 
 ***Quarkus*** est un framework Java open source, conçu pour créer des applications Java natives et efficaces pour le cloud. Il est basé sur des normes Java bien établies et largement adoptées, notamment Eclipse MicroProfile, Hibernate et Apache Camel via une architecture réactive.
@@ -223,7 +223,20 @@ Dans ce cas, le Access Token est généré à partir du Refresh Token, sans avoi
 ##### Tester l'authentification avec Client ID et Client Secret
 - Récupérer le Client ID et le Client Secret
 On peut récupérer le Client ID et le Client Secret dans l'onglet Credentials du client
-- Tester l'authentification avec le Client ID et le Client Secret
+
+* On va activer l'option Client Autentication et Service Accounts roles
+
+![img_28.png](img_28.png)
+![img_27.png](img_27.png)
+![img_29.png](img_29.png)
+
+##### Changer les paramètres des Tokens Access Token et Refresh Token
+- Dans l'onglet Settings du Realm, on peut changer les paramètres des Tokens Access Token et Refresh Token
+- On peut changer la durée de validité des Tokens Access Token et Refresh Token
+
+## ***Partie 2 : Sécuriser avec Keycloak les applications Wallet App***
+ 
+Dans cette partie, on va sécuriser les applications Wallet App avec Keycloak. On va utiliser le protocole OpenID Connect pour sécuriser les applications Wallet App. On va utiliser le client wallet-client créé dans la partie précédente.
 
 
 

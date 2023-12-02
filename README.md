@@ -217,6 +217,14 @@ Le token se présente sous la forme suivante : `header.payload.signature`
 ##### Tester l'authentification avec le Refresh Token
 - Récupérer le Refresh Token du précédent test
 
+![img_25.png](img_25.png)
+Dans ce cas, le Access Token est généré à partir du Refresh Token, sans avoir à s'authentifier à nouveau.
+
+##### Tester l'authentification avec Client ID et Client Secret
+- Récupérer le Client ID et le Client Secret
+On peut récupérer le Client ID et le Client Secret dans l'onglet Credentials du client
+- Tester l'authentification avec le Client ID et le Client Secret
+
 
 
 

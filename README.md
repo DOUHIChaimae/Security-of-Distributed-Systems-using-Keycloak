@@ -181,7 +181,44 @@ Le token se présente sous la forme suivante : `header.payload.signature`
 ```
 ***Signature***
 
-![img_22.png](img_22.png)
+`Signature = HMACSHA256(base64UrlEncode(header) + "." + base64UrlEncode(payload), secret)`
+
+- Analyser le contenu du Refresh Token sur le site https://jwt.io/
+
+***HEADER***
+```json
+{
+   "alg": "HS256",
+   "typ": "JWT",
+   "kid": "6e7a2f70-b794-4e02-8eb3-a29642b61014"
+}
+```
+
+***Payload***
+```json
+{
+   "exp": 1701553123,
+   "iat": 1701551323,
+   "jti": "1ac7de38-e1e6-4589-94c1-1a3e79c0932f",
+   "iss": "http://localhost:8080/realms/wallet-realm",
+   "aud": "http://localhost:8080/realms/wallet-realm",
+   "sub": "662e2ffc-b0cf-4b98-b03f-e19f5b2a64f2",
+   "typ": "Refresh",
+   "azp": "wallet-client",
+   "session_state": "a1924b36-b992-4e56-a017-b0d37c01e34e",
+   "scope": "email profile",
+   "sid": "a1924b36-b992-4e56-a017-b0d37c01e34e"
+}
+```
+***Signature***
+
+`Signature = HMACSHA256(base64UrlEncode(header) + "." + base64UrlEncode(payload), secret)`
+
+##### Tester l'authentification avec le Refresh Token
+- Récupérer le Refresh Token du précédent test
+
+
+
 
 
 

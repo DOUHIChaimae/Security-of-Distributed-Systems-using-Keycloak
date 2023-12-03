@@ -581,8 +581,6 @@ onLogout() {
     );
   }
 ```
-
-
 ## Conclusion ✨
 En conclusion, ce TP a démontré la robustesse de Keycloak dans la sécurisation des systèmes distribués. La configuration de Realm, la gestion des utilisateurs, et l'intégration avec l'application Wallet App ont renforcé la sécurité. Keycloak se positionne comme un outil puissant pour répondre aux besoins de sécurité, soulignant l'importance cruciale de la gestion des identités dans les applications distribuées.
 

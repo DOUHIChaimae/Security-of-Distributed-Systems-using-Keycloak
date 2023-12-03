@@ -583,7 +583,7 @@ onLogout() {
 ```
 
 
-## Conclusion
+## Conclusion ✨
 Dans cette activité pratique, on a pu découvrir Keycloak et comment sécuriser les applications Wallet App avec Keycloak.
 Keycloak est un serveur d'authentification et d'autorisation Open Source. Il permet de gérer les utilisateurs, les rôles, les groupes, les sessions, les politiques de sécurité, etc. Il est basé sur le standard OpenID Connect et s'appuie sur le standard OAuth 2.0. Il est compatible avec les standards SAML 2.0 et LDAP.
 

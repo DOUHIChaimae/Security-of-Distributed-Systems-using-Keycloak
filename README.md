@@ -231,7 +231,7 @@ On peut récupérer le Client ID et le Client Secret dans l'onglet Credentials d
 ## ***Partie 2 : Sécuriser avec Keycloak les applications Wallet App***
  
 Dans cette partie, on va sécuriser les applications Wallet App avec Keycloak. On va utiliser le protocole OpenID Connect pour sécuriser les applications Wallet App. On va utiliser le client wallet-client créé dans la partie précédente.
-### 1) ***ebank-service-unsecured project***
+### 1) ***ebank-service project***
 GET http://localhost:8084/currencyDeposits
 ![img_31.png](captures/img_31.png)
 
@@ -422,7 +422,7 @@ public Wallet addWallet(@Argument String currencyCode, @Argument double initialB
 }
 ```
 
-### 3) ***Wallet-Frontend project in Angular***
+### 3) ***Wallet-Frontend project***
 ![img_44.png](captures/img_44.png)
 On va installer ***keycloak-angular*** et ***keycloak-js***
 ```Text

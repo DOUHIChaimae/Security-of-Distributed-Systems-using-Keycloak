@@ -460,7 +460,7 @@ Dans providers, on va ajouter la ligne suivante
 ```
 Maintenant on va se diriger autematiquement vers Keyclock pour s'authentifier
 
-![img.png](img.png)
+![img.png](captures/im.png)
 
 On va maintenant protéger les routes de l'application en utilisant ***AuthGuardService***
 ```javascript
@@ -572,7 +572,7 @@ async login() {
 
 L'utilisateur connécté est affiché dans la navbar
 
-![img_3.png](img_3.png)
+![img_3.png](captures/im_3.png)
 
 
 * logout method
@@ -587,7 +587,9 @@ onLogout() {
 ```
 
 
-
+## Conclusion
+Dans cette activité pratique, on a pu découvrir Keycloak et comment sécuriser les applications Wallet App avec Keycloak.
+Keycloak est un serveur d'authentification et d'autorisation Open Source. Il permet de gérer les utilisateurs, les rôles, les groupes, les sessions, les politiques de sécurité, etc. Il est basé sur le standard OpenID Connect et s'appuie sur le standard OAuth 2.0. Il est compatible avec les standards SAML 2.0 et LDAP.
 
 
 

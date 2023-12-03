@@ -237,6 +237,35 @@ On peut récupérer le Client ID et le Client Secret dans l'onglet Credentials d
 ## ***Partie 2 : Sécuriser avec Keycloak les applications Wallet App***
  
 Dans cette partie, on va sécuriser les applications Wallet App avec Keycloak. On va utiliser le protocole OpenID Connect pour sécuriser les applications Wallet App. On va utiliser le client wallet-client créé dans la partie précédente.
+### 1) ***ebank-service-unsecured project***
+GET http://localhost:8084/currencyDeposits
+![img_31.png](img_31.png)
+
+POST http://localhost:8084/currencyTransfer
+![img_32.png](img_32.png)
+
+Ajout des dépendances suivantes dans le pom.xml
+```xml
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-security</artifactId>
+</dependency>
+<dependency>
+   <groupId>org.keycloak</groupId>
+   <artifactId>keycloak-spring-boot-starter</artifactId>
+   <version>23.0.1</version>
+</dependency>
+```
+
+Ajout des configurations suivantes dans le application.properties
+```properties
+keycloak.realm=ebank-realm
+keycloak.resource=ebank-client
+keycloak.bearer-only=true
+keycloak.auth-server-url=http://localhost:8080
+keycloak.ssl-required=none
+```
+
 
 
 

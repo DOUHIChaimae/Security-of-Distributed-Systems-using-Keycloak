@@ -458,7 +458,7 @@ Dans providers, on va ajouter la ligne suivante
     }
   ]
 ```
-Maintenant on va se diriger autematiquement vers Keyclock pour s'authentifier
+Maintenant on va se rediriger automatiquement vers Keyclock pour s'authentifier
 
 ![img.png](captures/im.png)
 
